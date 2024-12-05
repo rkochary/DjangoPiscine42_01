@@ -1,4 +1,4 @@
-def var_to_dict():
+def to_dict():
     d = [
         ('Hendrix' , '1942'),
         ('Allman' , '1946'),
@@ -21,10 +21,10 @@ def var_to_dict():
         ('Thompson' , '1949'),
         ('Burton' , '1939'),
     ]
-    my_dict = {year: artist for artist, year in d}
-    for key, value in my_dict.items():
+    dictionary = {year: artist for artist, year in d}
+    for key, value in dictionary.items():
         print(f"{key} : {value}")
-    return my_dict
+    return dictionary
 
 if __name__ == '__main__':
-    var_to_dict()
+    to_dict()

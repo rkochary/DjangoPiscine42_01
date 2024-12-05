@@ -1,5 +1,5 @@
 def numbers():
-    file = open('numbers.txt', 'r')
+    file = open('numbers.txt')
     numbers = file.read().replace(',', '\n')
     print(numbers)
 
